@@ -9,6 +9,11 @@ namespace GradeConverter
             Console.Write("Enter a numerical grade between 0 and 100: ");
             int grade = Convert.ToInt32(Console.ReadLine());
 
+            if (grade > 100 && grade < 0)
+            {
+                Console.WriteLine("Invalid Score");
+            }
+
             if (grade >= 90)
             {
                 Console.WriteLine("A");
